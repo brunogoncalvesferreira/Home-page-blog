@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fontes da Page-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Desafio:RocketBlog</title>
+  </head>
+  <body>
+
+    <!-- header é  o cabeçalho da page -->
+
+    <header id="header">
+
+      <!-- Criamos class='container' para que no CSS conseguimos colocar os elementos com as mesmas margens, seguindo um padrão de design -->
+
+      <!-- nav tag semântica para criar menu de navegação -->
+      <nav class="container">
+
+
+        <a class="logo" href="#"><img src="./images/logo.svg" alt="Logo" /></a>
+
+        <ul class="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+
+        <input type="search" name="busca" id="search" placeholder="Buscar" /> 
+      </nav>
+    </header>
+    <main id="main">
+      <section id="section">
+        <div class="container home">
+          <div class="text-group">
+            <h1 class="title-home">
+              Veja o guia definitivo para conquistar seus objetivos como DEV em
+              2022
+            </h1>
+
+            <p class="paragraph-home">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+              eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+              sed tristique placerat hac.
+            </p>
+
+            <div class="see-more">
+              <a href="#">Veja mais</a
+              ><img src="./images/arrow-right.svg" alt="imagem flecha"
+              /></>
+            </div>
+          </div>
+
+          <div class="featured-image">
+            <img src="./images/featured-image.png" alt="imagem da home" />
+          </div>
+        </div>
+      </section>
+
+      <section id="content">
+        <div class="container posts">
+
+          <div class="post-1">
+
+            <img src="./images/post-1.png" alt="imagem PC">
+
+            <p class="small-post1">Janeiro 04, 2022</p>
+
+            <h3 class="title-post1">Começando no ReactJS em 2022</h3>
+
+            <p class="paragraph-post1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
+          </div>
+
+          <div class="side-post">
+
+            <small class="small-post1">Janeiro 04, 2022</small>
+
+            <h3 class="title-post1">Conheça as principais técnicas para conseguir uma vaga internacional em programação</h3>
+
+            <p class="paragraph-post1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+
+            <small class="small-post1">Janeiro 04, 2022</small>
+
+            <h3 class="title-post1">Veja a evolução do Front-end na prática</h3>
+
+            <p class="paragraph-post1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. </p>
+
+          </div>
+        </div>
+
+        <div class="container three">
+          <div class="post-2">
+            <img src="./images/post-2.png" alt="imagem 2">
+            <small>Janeiro 04, 2022</small>
+            <h3>10 dicas para conseguir a vaga desejada</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+          </div>
+
+          <div class="post-3">
+            <img src="./images/post-3.png" alt="imagem 3">
+
+            <small>Janeiro 04, 2022</small>
+
+            <h3>Deixe seu código mais semântico com essas dicas</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+          </div>
+
+          <div class="post-4">
+            <img src="./images/post-4.png" alt="imagem 4">
+
+            <small>Janeiro 04, 2022</small>
+
+            <h3>Use essas dicas nas suas aplicações mobile</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer - Rodapé  -->
+    <footer id="footer">
+      <p>Criação pelo Bruno Gonçalves Ferreira | Todos direitos reservados 2022</p>
+    </footer>
+  </body>
+</html>
