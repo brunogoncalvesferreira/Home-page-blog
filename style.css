@@ -21,10 +21,14 @@
 body {
   -webkit-font-smoothing: antialiased !important;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* ================= Header =======================*/
 header#header {
   background: var(--purple-bg);
+  padding: 4rem 0 4rem 0;
 }
 nav.container {
   display: flex;
@@ -54,6 +58,7 @@ input#search {
   font-size: 0.87rem;
   font-family: 'roboto';
   font-weight: 400;
+  color: white;
   border: none;
 }
 
@@ -158,29 +163,29 @@ div.side-post p.paragraph-post1 {
 }
 
 /* ================= Postagens Abaixos =======================*/
-div.three {
+div#three {
   display: flex;
   gap: 1.5rem;
   margin-top: 4rem;
 }
-div.three img {
+div#three img {
   width: 21.5rem;
 }
-div.three div.post-2 small {
+div#three div.post-2 small {
   font-family: 'roboto';
   font-size: 1rem;
   font-weight: 400;
   color: #000000;
   margin-top: 1rem;
 }
-div.three div.post-3 small {
+div#three div.post-3 small {
   font-family: 'roboto';
   font-size: 1rem;
   font-weight: 400;
   color: #000000;
   margin-top: 1rem;
 }
-div.three div.post-4 small {
+div#three div.post-4 small {
   font-family: 'roboto';
   font-size: 1rem;
   font-weight: 400;
@@ -188,28 +193,28 @@ div.three div.post-4 small {
   margin-top: 1rem;
 }
 
-div.three div.post-2 h3 {
+div#three div.post-2 h3 {
   font-family: 'roboto';
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--purple-bg);
   margin-top: 0.5rem;
 }
-div.three div.post-3 h3 {
+div#three div.post-3 h3 {
   font-family: 'roboto';
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--purple-bg);
   margin-top: 0.5rem;
 }
-div.three div.post-4 h3 {
+div#three div.post-4 h3 {
   font-family: 'roboto';
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--purple-bg);
   margin-top: 0.5rem;
 }
-div.three div.post-2 p {
+div#three div.post-2 p {
   font-family: 'roboto';
   font-weight: 400;
   font-size: 1rem;
@@ -217,7 +222,7 @@ div.three div.post-2 p {
   margin-top: 0.5rem;
   text-align: justify;
 }
-div.three div.post-3 p {
+div#three div.post-3 p {
   font-family: 'roboto';
   font-weight: 400;
   font-size: 1rem;
@@ -226,7 +231,7 @@ div.three div.post-3 p {
   text-align: justify;
 }
 
-div.three div.post-4 p {
+div#three div.post-4 p {
   font-family: 'roboto';
   font-weight: 400;
   font-size: 1rem;
@@ -239,7 +244,9 @@ div.three div.post-4 p {
 
 footer#footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20rem;
   padding-bottom: 2rem;
   background: var(--purple-bg);
   color: var(--white);
@@ -250,4 +257,13 @@ footer#footer p {
   font-family: 'roboto';
   font-weight: 400;
   font-size: 1rem;
+  text-align: center;
 }
+footer#footer a {
+  width: 2rem;
+  height: 2rem;
+  background: var(--button-bg);
+  border-radius: 50%;
+  margin-right: 4rem;
+}
+
